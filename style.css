@@ -20,6 +20,11 @@ nav a{
     display: flex;
     margin-right: 30px;
 }
+.influencer-information:hover{
+    transform: scale(1.1);
+    transition: transform 3s ease;
+    background-color: lightgray;
+}
 h1{
     font-size: 50px ;
     font-weight: 60px;
@@ -95,9 +100,14 @@ button{
 .photography{
     display: flex;
 }
+.photography img{
+    width: 85%;
+    border: 2px solid cadetblue;
+    border-radius: 15px;
+}
 .half-width{
-    margin-left: 120px;
-    margin-right: 10px ;
+    margin-left: 100px;
+    margin-right: 15px ;
     width: 50%;
 }
 #foot-sec{
@@ -116,6 +126,96 @@ footer a{
     margin: 5px;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width:700px) {
+   body{
+    flex-direction: column;
+    text-align: center;
+   }
+    nav{
+       flex-direction: column;
+       text-align: center;
+    }
+    .influencer-information{
+        font-size: 20px;
+        flex-direction: column;
+       text-align: center;
+    }
+    .influencer-information .half-width{
+        margin-top: 10px;
+        width: 15%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .brand-logo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        justify-content: center;
+    }
+    .more{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .photography{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width:992px)
+{
+    body{
+        flex-direction: column;
+        text-align: center;
+        
+       }
+    nav{
+        flex-direction: column;
+        text-align: center;
+     }
+    .influencer-information{
+         font-size: 30px;
+         flex-direction: column;
+        text-align: center;
+     }
+     .influencer-information .half-width{
+        margin-top: 15px;
+        width: 15%;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .brand-logo{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        justify-content: center;
+    }
+    .more{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .photography{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .photography .img{
+        width: 100%;
+        height: 50%;
+    }
 }
 
 
