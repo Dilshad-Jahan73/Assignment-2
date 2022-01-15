@@ -18,7 +18,7 @@ nav a{
 }
 .influencer-information{
     display: flex;
-    margin-right: 120px;
+    margin-right: 30px;
 }
 h1{
     font-size: 50px ;
@@ -92,11 +92,19 @@ button{
 .fa-star-half-alt{
     color: orange;
 }
+.photography{
+    display: flex;
+}
+.half-width{
+    margin-left: 120px;
+    margin-right: 10px ;
+    width: 50%;
+}
 #foot-sec{
     background-color:#0A0826;
     color: white;
     padding-top: 10px;
-
+    margin-top: 50px;
 }
 footer{
     text-align: center;
